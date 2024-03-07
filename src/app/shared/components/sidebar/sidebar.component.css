@@ -1,0 +1,8 @@
+:host {
+  display: block;
+}
+
+#siderbar {
+  height: 100vh;
+  width: 250px
+}

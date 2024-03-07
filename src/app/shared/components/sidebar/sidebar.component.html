@@ -1,0 +1,24 @@
+<div class="bg-dark border-right p-3" id="siderbar">
+  <h3 class="text-light text-center">Gifs App</h3>
+  <hr class="text-primary" />
+  <div *ngFor="let tag of getTagHistory" class="list-group list-reset">
+    <div class="btn-group p-2" role="group">
+      <button
+        (click)="getTagAgain(tag)"
+        type="button"
+        class="btn btn-primary"
+        style="width: 150px"
+      >
+        {{ tag | titlecase }}
+      </button>
+      <button
+        (click)="emitDeleteTag(tag)"
+        type="button"
+        class="btn btn-secondary"
+        style="width: 50px"
+      >
+        X
+      </button>
+    </div>
+  </div>
+</div>
